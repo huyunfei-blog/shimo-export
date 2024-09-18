@@ -1,0 +1,7 @@
+/config.json
+
+.idea
+files*
+.vscode
+shimo
+config*.json
