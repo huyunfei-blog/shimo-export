@@ -21,6 +21,7 @@
 
 在石墨文档中评论，首先你需要先选择一段文字，然后可以对这段文字进行评论。那么这段文字就会有一个唯一的id，叫SelectionGuid.
 
+```go
 type CommentGroup struct {
     SelectionGuid    string `json:"selectionGuid"`  // 选择的这段文字的唯一标识
     SelectionContent string `json:"selectionContent"`  // 选择的这段文字的文本内容
@@ -31,3 +32,4 @@ type CommentGroup struct {
         ReplyTo     string `json:"replyTo"`  // 如果此条评论是回复某个评论，这个值为那个评论的评论id，否则为空。
     } `json:"comments"`
 }
+```
